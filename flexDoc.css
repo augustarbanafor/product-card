@@ -2,7 +2,7 @@ body {
     background-color:rgb(231, 217, 195);
 }
 .product-card-container {
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,6 +97,12 @@ button:hover {
     font-size: 16px; 
     font-family: 'Montserrat', sans-serif;
     margin-left: 15px;
+}
+.attribution { 
+    font-size: 11px; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
 
 /*Tablets and Phone Screens*/
