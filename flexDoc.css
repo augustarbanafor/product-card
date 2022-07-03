@@ -1,0 +1,117 @@
+body {
+    background-color:rgb(231, 217, 195);
+}
+.product-card-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product-card {
+    width: 50%;
+    min-height: 500px;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.image-container {
+    flex: 1 0 50%;
+    min-height: 500px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.text-container {
+    flex: 1 0 50%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;      
+}
+.text-content {
+    height: 100%;
+    align-self: center;
+    margin: 0 auto;
+    width: 80%;
+    flex: 1 1;
+}
+.header {
+    color: gray;
+    font-family:'Montserrat', sans-serif;
+    letter-spacing: 4px;
+}
+#title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+.desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: gray;
+    letter-spacing: 1px;
+}
+.discounted-price {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 42px;
+    color: rgb(20, 109, 101);
+}
+#old-price {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+    font-size: 14px;
+    color: gray;
+    position: relative;
+    bottom: 7px;
+    left: 10px;
+}
+button {
+    width: 100%;
+    background-color: rgb(13, 117, 81);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(25, 71, 71);
+}
+#cart-icon {
+    width: 8%;
+    height: 15px;
+    margin: 0 auto;
+}
+.cart-text {
+    text-align: center;
+    display: inline-block;
+    color: white;
+    font-size: 16px; 
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 15px;
+}
+
+/*Tablets and Phone Screens*/
+@media screen and (max-width: 1000px) {
+        .product_card {
+        display: flex;
+        flex-direction: column; 
+    }
+    .image-container {
+        width: 100%;
+    }
+    .text-content {
+        margin-bottom: 100px;
+    } 
+}
+
+
+
